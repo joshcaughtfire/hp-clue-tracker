@@ -1,0 +1,115 @@
+.guesses-list .empty-state {
+  text-align: center;
+  color: var(--light);
+  opacity: 0.7;
+  padding: 2rem;
+}
+
+.guesses {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.guess-item {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 1rem;
+  border-left: 4px solid var(--gold);
+}
+
+.guess-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.round {
+  font-size: 0.875rem;
+  color: var(--gold);
+  font-weight: 600;
+}
+
+.guesser {
+  font-weight: 600;
+  color: var(--light);
+}
+
+.guess-cards {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.guess-cards .suspect,
+.guess-cards .location,
+.guess-cards .weapon {
+  background: rgba(116, 0, 1, 0.3);
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  color: var(--light);
+  font-weight: 500;
+}
+
+.guess-cards .divider {
+  color: var(--gold);
+  opacity: 0.5;
+}
+
+.guess-result {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.shown {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--success);
+}
+
+.no-show {
+  color: var(--info);
+  font-style: italic;
+}
+
+.passed {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--light);
+  opacity: 0.8;
+}
+
+.guess-result .label {
+  font-weight: 600;
+  color: var(--gold);
+}
+
+.guess-result .player,
+.guess-result .players {
+  color: var(--light);
+}
+
+.guess-result .card {
+  color: var(--gold);
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .guess-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+
+  .guess-cards {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,43 @@
+.player-setup {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.player-input {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.player-input input[type="text"] {
+  flex: 1;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  color: var(--light);
+  white-space: nowrap;
+  margin-bottom: 0;
+}
+
+.radio-label input[type="radio"] {
+  width: auto;
+  cursor: pointer;
+}
+
+.radio-label span {
+  color: var(--gold);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .player-input {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+}

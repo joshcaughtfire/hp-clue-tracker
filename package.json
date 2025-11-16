@@ -1,0 +1,29 @@
+{
+  "name": "hp-clue-tracker",
+  "version": "1.0.0",
+  "description": "Harry Potter Clue Tracker - Track guesses and calculate probabilities",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://local_proxy@127.0.0.1:16624/git/joshcaughtfire/hp-clue-tracker"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.5",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.2"
+  }
+}

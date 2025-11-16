@@ -1,0 +1,194 @@
+.card-grid .subtitle {
+  text-align: center;
+  color: var(--light);
+  opacity: 0.8;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.legend {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--light);
+}
+
+.legend-icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-weight: 700;
+}
+
+.legend-icon.has {
+  background: var(--success);
+  color: white;
+}
+
+.legend-icon.not {
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--light);
+}
+
+.legend-icon.maybe {
+  background: var(--info);
+  color: white;
+}
+
+.card-section {
+  margin-bottom: 2rem;
+}
+
+.card-section h3 {
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--gold);
+}
+
+.grid-table {
+  overflow-x: auto;
+}
+
+.grid-header {
+  display: grid;
+  grid-template-columns: 180px repeat(auto-fit, minmax(80px, 1fr));
+  gap: 2px;
+  margin-bottom: 2px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2px;
+  border-radius: 6px;
+}
+
+.grid-header > div {
+  background: rgba(116, 0, 1, 0.4);
+  padding: 0.75rem 0.5rem;
+  text-align: center;
+  font-weight: 700;
+  color: var(--gold);
+  font-size: 0.875rem;
+}
+
+.grid-row {
+  display: grid;
+  grid-template-columns: 180px repeat(auto-fit, minmax(80px, 1fr));
+  gap: 2px;
+  margin-bottom: 2px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2px;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.grid-row.selected {
+  background: rgba(211, 166, 37, 0.2);
+  box-shadow: 0 0 0 2px var(--gold);
+}
+
+.card-cell {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 0.75rem 0.5rem;
+  font-weight: 600;
+  color: var(--light);
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.status-cell,
+.envelope-cell {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.75rem 0.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.status-cell:hover,
+.envelope-cell:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: scale(1.05);
+}
+
+.status-cell.has {
+  background: var(--success);
+  color: white;
+}
+
+.status-cell.not {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--light);
+  opacity: 0.6;
+}
+
+.status-cell.maybe {
+  background: var(--info);
+  color: white;
+}
+
+.envelope-cell.has {
+  background: var(--gold);
+  color: var(--dark);
+}
+
+.envelope-cell.not {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--light);
+  opacity: 0.6;
+}
+
+.envelope-cell.maybe {
+  background: var(--info);
+  color: white;
+}
+
+.prob-text {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .grid-header,
+  .grid-row {
+    grid-template-columns: 120px repeat(auto-fit, minmax(60px, 1fr));
+    font-size: 0.75rem;
+  }
+
+  .card-cell {
+    font-size: 0.8rem;
+    padding: 0.5rem 0.25rem;
+  }
+
+  .status-cell,
+  .envelope-cell {
+    padding: 0.5rem 0.25rem;
+    font-size: 0.9rem;
+  }
+
+  .prob-text {
+    font-size: 0.65rem;
+  }
+
+  .legend {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
